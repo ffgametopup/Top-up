@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free Fire Game Top Up</title>
+<link rel="icon" href="https://ffgametopup.com/favicon.ico" />
+<style>
+  /* (same styles as before) */
+  body {
+    margin: 0; font-family: Arial, sans-serif; background: #111;
+    color: #fff;
+  }
+  header {
+    background: #222;
+    padding: 15px 30px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  header img.logo {
+    height: 40px;
+  }
+  main {
+    max-width: 480px;
+    margin: 40px auto;
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 8px;
+  }
+  h1 {
+    font-size: 24px; margin-bottom: 20px;
+    text-align: center;
+    color: #f1c40f;
+    text-shadow: 0 0 5px #f1c40f;
+  }
+  label {
+    display: block; margin-bottom: 6px;
+    font-weight: bold;
+    color: #f1c40f;
+  }
+  input[type="text"], input[type="file"], select {
+    width: 100%; padding: 10px; margin-bottom: 20px;
+    border-radius: 4px; border: none;
+    font-size: 16px;
+  }
+  input[type="submit"] {
+    background: #f1c40f;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  input[type="submit"]:hover {
+    background: #d4ac0d;
+  }
+  .payment-info {
+    background: #222;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #666;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="https://ffgametopup.com/images/logo.png" alt="Logo" class="logo" />
+</header>
+<main>
+  <h1>Free Fire Top-Up</h1>
+
+  <form id="topupForm" action="thankyou.html" method="POST" enctype="multipart/form-data" target="_blank" onsubmit="return validateForm()">
+    <label for="playerId">Player ID</label>
+    <input type="text" id="playerId" name="playerId" placeholder="Enter your Free Fire Player ID" required />
+
+    <label for="amount">Select Diamond Amount</label>
+    <select id="amount" name="amount" required>
+     <option value="45">70 Diamonds - 45 BDT</option>
+      <option value="90">140 Diamonds - 90 BDT</option>
+      <option value="120">355 Diamonds - 120 BDT</option>
+      <option value="250">720 Diamonds - 250 BDT</option>
+      <option value="450">1500 Diamonds - 450 BDT</option>
+<option value="139">weekly - 139 BDT</option>
+<option value="699">monthly - 699 BDT</option>
+<option value="270">2×weekly - 270 BDT</option>
+<option value="1390">2×monthly - 1390 BDT</option>
+<option value="830">1×weekly + 1× monthly - 830 BDT</option>
+    </select>
+
+    <input type="submit" value="Buy Now" />
+  </form>
+</mBAZAR
+<p>
+<h2>Product Information</h2>
+
+<p>⦿ শুধুমাত্র Bangladesh সার্ভারে ID Code দিয়ে টপ আপ হবে। </p>
+<p>⦿ Player ID Code ভুল দিয়ে Diamond না পেলে FF GAME TOP UP কর্তৃপক্ষ দায়ী নয়। </p>
+<p>⦿ Order কমপ্লিট হওয়ার পরেও আইডিতে ডাইমন্ড না গেলে সাপোর্টে মেসেজ দিন। </p>
+<p>⦿ অর্ডার Cancel হলে কি কারণে তা Cancel হয়েছে তা অর্ডার হিস্টোরিতে দেওয়া থাকে অনুগ্রহ পুর্বক দেখে পুনরায় সঠিক তথ্য দিয়ে অর্ডার করবেন। অনুগ্রহ করে কেউ মোবাইল রিচার্জ দিবেন না। মোবাইল রিচার্জ দিলে টাকা ফেরত পাবেন না।</p>
+</p>
+<footer>
+  &copy; 2025 Free Fire Game Top Up. All rights reserved.
+</footer>
+
+<script>
+  function validateForm() {
+    const playerId = document.getElementById('playerId').value.trim();
+    const amount = document.getElementById('amount').value;
+    const txnId = document.getElementById('transactionId').value.trim();
+
+    if (!playerId || !amount || !txnId) {
+      alert('Please fill all required fields.');
+      return false;
+    }
+    return true;
+  }
+</script>
+</body>
+</html>
+
